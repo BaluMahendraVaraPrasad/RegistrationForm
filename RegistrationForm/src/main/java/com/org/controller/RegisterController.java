@@ -23,10 +23,10 @@ public class RegisterController {
 		boolean res=RegisterDao.saveReg(e);
 		if(res)
 		{
-			mav.addObject("msg","Registered Successfully");
+			mav.addObject("msg","Registration Successfull");
 		}
 		else {
-			mav.addObject("msg","somthing went wrong");
+			mav.addObject("msg","something went wrong");
 		}
 		return mav;
 	}
@@ -45,7 +45,7 @@ public class RegisterController {
 		boolean res = RegisterDao.deleteReg(id);
 		if(res)
 		{
-			mav.addObject("msg","delete risgister successfully");
+			mav.addObject("msg","Registration Deleted  Successfully");
 		}
 		return mav;
 	}
